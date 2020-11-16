@@ -1,2 +1,0 @@
-# skillfactory
-educational repo
