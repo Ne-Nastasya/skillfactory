@@ -4,16 +4,16 @@ function Appliance(name, power, switcher){
   this.switcher = switcher
 }
 
-Appliance.prototype.getPower = function (power){
+Appliance.prototype.getPower = function (){ // Параметр power в функции никак не используется, можно его убрать
   console.log(`Потребляемая мощность: ${this.power}`);
 }
-Appliance.prototype.turnOn = function (switcher){
+Appliance.prototype.turnOn = function (){ // То же самое, исправила здесь  и в аналогичных местах ниже
   if (this.switcher === false){
     this.switcher = true
   }
   console.log(`Устройство включено`);
 }
-Appliance.prototype.turnOff = function (switcher){
+Appliance.prototype.turnOff = function (){
   if (this.switcher === true){
     this.switcher = false
   }
