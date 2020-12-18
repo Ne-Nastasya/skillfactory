@@ -4,16 +4,16 @@ class Appliance {
   this.power = power;
   this.switcher = switcher;
   }
-  getPower(power){
+  getPower(){ // Аналогичное замечание, как в предыдущих заданиях
   console.log(`Потребляемая мощность: ${this.power}`);
   }
-  turnOn(switcher){
+  turnOn(){
     if (this.switcher === false){
     this.switcher = true
       }
   console.log(`Устройство включено`);
   }
-  turnOff(switcher){
+  turnOff(){
     if (this.switcher === true){
     this.switcher = false
      }
@@ -27,7 +27,7 @@ class SmartAppliance extends Appliance {
     this.isWiFiAble = isWiFiAble;
     this.ecosystem = ecosystem;
   }
-  getEcosystem(ecosystem){
+  getEcosystem(){
     console.log(this.ecosystem);
   }
 }
