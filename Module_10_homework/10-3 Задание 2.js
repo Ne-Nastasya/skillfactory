@@ -2,14 +2,12 @@
 let x='';
 if (typeof x==="boolean"){
   alert ("Х — относится к логическому типу")
+} else if (typeof x==="string"){
+  alert ("Х — строка")
+} else if (typeof x==="number"){
+  alert ("Х — число")
 } else {
-  if (typeof x==="string"){
-    alert ("Х — строка")
-  } else {
-    if (typeof x==="number"){
-      alert ("Х — число")
-    } else {
-      alert ("Тип Х не определен")
-    }
-  }
+  alert ("Тип Х не определен")
 }
+
+// Задание выполнено верно, но в условном операторе слишком много вложенных уровней. В данном случае достаточно использовать одноуровневый if-else 
